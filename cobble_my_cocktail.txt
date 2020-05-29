@@ -1,0 +1,20 @@
+Cobble My Cocktail
+
+Build an app that allows a user to enter the odds and ends of their alcoholic beverages they have lying around, and return a tasty cocktail recipe for them!
+
+Everyone has a collection of bottles of booze at the back of their cupboard, well this app will allow you to throw all of them into our system and get the recipe for a new and potentially hazardous drink!
+
+MVP
+
+* The app will allow the user to create and update a list of the drinks they have available to them
+* The app will take the drinks available (and their quantities) and return a recipe which contains the appropriate ingredients 
+* They’ll be able to favourite recipes that the app suggests to them
+
+
+Potential Extensions
+
+* Include the ability for users to stipulate their likes and dislikes, so that only recipes they like will be offered.
+* The app will display the strength of each drink - based on the ingredients - and restrict additional drinks being created
+
+
+https://drive.google.com/file/d/1txoZFLpFV8LQvVJ4xUV5DAnxbS9eMc5Y/view?usp=sharing
