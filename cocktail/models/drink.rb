@@ -21,9 +21,9 @@ class Drink
       [
         $1, $2, $3
       ]
-        RETURNING *"
+        RETURNING id"
     values = [@name, @type, @abv]
     drinks = SqlRunner.run(sql, values)
-    @id = drinks.first[0]['id'].to_i
+    @id = drinks.first()['id'].to_i
   end
 end
