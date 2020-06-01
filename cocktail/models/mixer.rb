@@ -9,7 +9,19 @@ class Mixer
     @name = options ['name']
   end
 
-  # def save()
-  #   sql = "INSERT INTO MIXERS"
+  def save()
+    sql = "INSERT INTO mixers
+    (
+      name, type
+      )
+      VALUES
+      (
+        $1, $2
+      )
+        RETURNING $3"
+    values = [@name, @type]
+    mixers = SqlRunner.run(sql, values)
+    @id = mixers.first()['id'].to_i
+  end
 
 end

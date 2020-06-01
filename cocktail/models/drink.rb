@@ -14,16 +14,37 @@ class Drink
 
   def save()
     sql = "INSERT INTO drinks
-    (
-      name, type, abv
-      )
+      (name, type, abv)
       VALUES
-      [
-        $1, $2, $3
-      ]
-        RETURNING id"
+      ($1, $2, $3)
+      RETURNING $4"
     values = [@name, @type, @abv]
     drinks = SqlRunner.run(sql, values)
     @id = drinks.first()['id'].to_i
   end
+
+  def Drink.find(id)
+    sql = "SELECT * FROM DRINKS WHERE id = $1"
+    values = [id]
+    drink = SqlRunner.run(sql, values)
+    return Drinks.new(drink.first)
+  end
+
+  def Drink.all()
+    sql = "SELECT * FROM DRINKS"
+    drink = SqlRunner.run(sql)
+    return drink.map{|drink| Drink.new(drink)}
+  end
+
+  def Drink.delete()
+    sql = "DELETE * FROM DRINKS WHERE id =$1"
+    values = [id]
+    SqlRunner.run (sql, values)
+  end
+
+  def Drink.delete_all()
+    sql = "DELETE * FROM DRINKS"
+    SqlRunner.run (sql)
+  end
+
 end
