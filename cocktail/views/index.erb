@@ -6,27 +6,25 @@
 
 <form action="/drinks" method="post">
   <label for="drink-select">Drink</label>
-    <select id="drink-select" name="Drink">
-      <option value="none">Select Your Booze!</option>
-      <option value="Vodka">Vodka</option>
-      <option value="Gin">Gin</option>
-      <option value="Rum">Rum</option>
-      <option value="Whisky">Whisky</option>
-      <option value="Wine">Wine</option>
-      <option value="Beer">Beer</option>
-    </select>
-  <br></br>
+  <select id="drink-select" name="Drink">
+    <option value="none">Select Your Drink!</option>
+    <% for drink in @drinks %>
+    <option value=<%= drink.id %>><%= drink.name %></option>
+<% end %>
 
+
+
+<form action="/mixers" method="post">
   <label for="mixer-select">Mixer</label>
-    <select id="mixer-select" name="Mixer">
-      <option value="none">Select Your Mixer!</option>
-      <option value="Coke">Coke</option>
-      <option value="Orange">Orange</option>
-      <option value="Lemonade">Lemonade</option>
-      <option value="Pineapple">Pineapple</option>
-      <option value="Soda">Soda</option>
-      <option value="Tonic">Tonic</option>
-    </select>
-    <br></br>
+  <select id="mixer-select" name="Mixer">
+    <option value="none">Select Your Mixer!</option>
+    <% for mixer in @mixers %>
+    <option value=<%= mixer.id %>><%= mixer.name %></option>
+
+
+    <% end %>
+
     <input type="Submit" value="Create!">
+
+
 </form>

@@ -4,6 +4,8 @@ require_relative('controllers/cocktail_controller')
 also_reload('./models/*')
 
 get '/' do
+  @drinks = Drink.all()
+  @mixers = Mixer.all()
   erb( :index )
 end
 
