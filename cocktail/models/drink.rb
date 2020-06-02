@@ -17,16 +17,26 @@ class Drink
       (name, type, abv)
       VALUES
       ($1, $2, $3)
-      RETURNING $4"
+      RETURNING id"
     values = [@name, @type, @abv]
     drinks = SqlRunner.run(sql, values)
     @id = drinks.first()['id'].to_i
   end
 
+  def update()
+    sql = "UPDATE drinks SET
+    (name, type, abv)
+    =
+    ($1, $2, $3)
+    WHERE id = $4"
+    values = [@name, @type, @abv]
+    SqlRunner.run(sql, values)
+  end
+
   def Drink.find(id)
     sql = "SELECT * FROM DRINKS WHERE id = $1"
     values = [id]
-    drink = SqlRunner.run(sql, values)
+    drink = SqlRunner.run(sql)
     return Drinks.new(drink.first)
   end
 
@@ -36,10 +46,10 @@ class Drink
     return drink.map{|drink| Drink.new(drink)}
   end
 
-  def Drink.delete()
+  def delete()
     sql = "DELETE * FROM DRINKS WHERE id =$1"
     values = [id]
-    SqlRunner.run (sql, values)
+    SqlRunner.run(sql)
   end
 
   def Drink.delete_all()

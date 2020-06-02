@@ -1,0 +1,9 @@
+body {
+  background: beige url('../images/background.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 90px;
+  margin: 50px;
+  /* cursor:pointer; */
+}

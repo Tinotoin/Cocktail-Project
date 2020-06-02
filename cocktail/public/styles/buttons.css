@@ -1,0 +1,28 @@
+.btn {
+  border:0px none;
+  border-radius: 3%;
+  padding: 8px 12px;
+  color: orange;
+  /* cursor: pointer; */
+  font-family: 'helvetica', cursive;
+}
+
+.btn--create {
+  background-color: lightpink;
+}
+
+.btn--create:hover {
+  background-color: #730000;
+}
+
+.btn--action:hover {
+  background-color: #495C27;
+}
+
+.btn--action {
+  background-color: darkolivegreen;
+}
+
+.btn--wrapper {
+  margin: 0px 0px 30px 0px;
+}

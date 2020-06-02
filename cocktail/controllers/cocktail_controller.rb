@@ -1,9 +1,9 @@
 require('sinatra')
 require('sinatra/contrib/all')
-require_relative('../models/drink.rb')
-also_reload('../models/*')
+require_relative('../models/drink')
+also_reload('../models')
 
-get '/drink' do
- @drink = Drink.all
- erb(:index)
-end
+# get '/' do
+#  @drink = Drink.all
+#  erb(:index)
+# end
