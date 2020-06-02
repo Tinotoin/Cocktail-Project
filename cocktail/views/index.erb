@@ -11,10 +11,9 @@
     <% for drink in @drinks %>
     <option value=<%= drink.id %>><%= drink.name %></option>
 <% end %>
+</select>
 
-
-
-<form action="/mixers" method="post">
+<!-- <form action="/mixers" method="post"> -->
   <label for="mixer-select">Mixer</label>
   <select id="mixer-select" name="Mixer">
     <option value="none">Select Your Mixer!</option>

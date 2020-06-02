@@ -37,14 +37,14 @@ class Cocktail
     cocktail = Cocktail.new(result)
     return cocktail
   end
-  #
-  # def make_cocktail(d_id, m_id)
-  #   for cocktail in cocktails
-  #     if drink.id == $1 && mixer.id == $2
-  #       return "Vodka & Coke"
-  #     else
-  #       return "Sorry, those don't go together!"
-  #     end
-  #   end
-  # end
+  
+  def make_cocktail(d_id, m_id)
+    for cocktail in cocktails
+      if drink.id == $1 && mixer.id == $2
+        return "Vodka & Coke"
+      else
+        return "Sorry, those don't go together!"
+      end
+    end
+  end
 end
