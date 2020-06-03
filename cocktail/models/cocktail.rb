@@ -42,12 +42,5 @@ class Cocktail
     end
 
   end
-  #
-  # def reject_cocktail(cocktail)
-  #   for cocktail in cocktails
-  #     if cocktail /= @cocktail
-  #       return "Sorry, those don't go together!"
-  #     end
-  #   end
-  # end
+
 end

@@ -10,7 +10,7 @@ class Mixer
     @type = options['type']
   end
 
-  def save()
+  def save() 
     sql = "INSERT INTO mixers
     (name, type)
     VALUES

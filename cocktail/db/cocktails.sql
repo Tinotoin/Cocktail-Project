@@ -24,3 +24,4 @@ CREATE TABLE cocktails
   drink_id INT REFERENCES drinks(id) ON DELETE CASCADE,
   mixer_id INT REFERENCES mixers(id) ON DELETE CASCADE
 );
+ 

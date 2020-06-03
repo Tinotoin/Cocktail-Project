@@ -11,7 +11,7 @@ class Drink
     @type = options['type']
     @abv = options['abv']
   end
-
+ 
   def save()
     sql = "INSERT INTO drinks
       (name, type, abv)

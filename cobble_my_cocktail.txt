@@ -7,14 +7,15 @@ Everyone has a collection of bottles of booze at the back of their cupboard, wel
 MVP
 
 * The app will allow the user to create and update a list of the drinks they have available to them
-* The app will take the drinks available (and their quantities) and return a recipe which contains the appropriate ingredients 
-* They’ll be able to favourite recipes that the app suggests to them
+* The app will take the drinks available and return a recipe which contains the appropriate ingredients 
 
 
 Potential Extensions
 
 * Include the ability for users to stipulate their likes and dislikes, so that only recipes they like will be offered.
 * The app will display the strength of each drink - based on the ingredients - and restrict additional drinks being created
+* They’ll be able to favourite recipes that the app suggests to them
+
 
 
 https://drive.google.com/file/d/1txoZFLpFV8LQvVJ4xUV5DAnxbS9eMc5Y/view?usp=sharing

@@ -7,3 +7,4 @@ also_reload('../models')
 #  @drink = Drink.all
 #  erb(:index)
 # end
+ 

@@ -59,7 +59,7 @@ cocktail1 = ({"name" => "Vodka & Coke", "drink_id" => @drink1.id, "mixer_id" => 
 @cocktail1 = Cocktail.new (cocktail1)
 
 cocktail2 = ({"name" => "Vodka & Orange", "drink_id" => @drink1.id, "mixer_id" => @mixer2.id})
-@cocktail2 = Cocktail.new(cocktail2)
+@cocktail2 = Cocktail.new(cocktail2) 
 
 cocktail3 = ({"name" => "Vodka & Lemonade", "drink_id" => @drink1.id, "mixer_id" => @mixer3.id})
 @cocktail3 = Cocktail.new(cocktail3)

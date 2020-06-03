@@ -30,6 +30,7 @@ class TestStudent < MiniTest::Test
 
   def test_cocktail_initialize
     assert_equal("Vodka & Coke", @cocktail.type)
-  end 
+  end
 
 end
+ 
