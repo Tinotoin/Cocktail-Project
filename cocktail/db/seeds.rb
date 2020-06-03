@@ -73,29 +73,35 @@ cocktail5 = ({"name" => "Vodka & Soda", "drink_id" => @drink1.id, "mixer_id" => 
 cocktail6 = ({"name" => "Vodka & Tonic", "drink_id" => @drink1.id, "mixer_id" => @mixer6.id})
 @cocktail6 = Cocktail.new(cocktail6)
 
-# cocktail7 = ({"name" => "Gin & Tonic", "drink_id" => @drink2.id, "mixer_id" => @mixer6.id})
-# @cocktail7 = Cocktail.new(cocktail7)
-#
-# cocktail8 = ({"name" => "Rum & Coke", "drink_id" => @drink3.id, "mixer_id" => @mixer1.id})
-# @cocktail8 = Cocktail.new(cocktail8)
-#
-# cocktail9 = ({"name" => "Rum & Lemonade", "drink_id" => @drink3.id, "mixer_id" => @mixer3.id})
-# @cocktail9 = Cocktail.new(cocktail9)
-#
-# cocktail10 = ({"name" => "Rum & Pineapple", "drink_id" => @drink3.id, "mixer_id" => @mixer4.id})
-# @cocktail10 = Cocktail.new(cocktail10)
-#
-# cocktail11 = ({"name" => "Whisky & Soda", "drink_id" => @drink4.id, "mixer_id" => @mixer5.id})
-# @cocktail11 = Cocktail.new(cocktail11)
-#
-# cocktail12 = ({"name" => "Wine Spritzer (Lemonade)", "drink_id" => @drink5.id, "mixer_id" => @mixer3.id})
-# @cocktail12 = Cocktail.new(cocktail12)
-#
-# cocktail13 = ({"name" => "Wine Spritzer (Soda)", "drink_id" => @drink5.id, "mixer_id" => @mixer5.id})
-# @cocktail13 = Cocktail.new(cocktail13)
-#
-# cocktail14 = ({"name" => "Shandy", "drink_id" => @drink6.id, "mixer_id" => @mixer3.id})
-# @cocktail14 = Cocktail.new(cocktail14)
+cocktail7 = ({"name" => "Gin & Tonic", "drink_id" => @drink2.id, "mixer_id" => @mixer6.id})
+@cocktail7 = Cocktail.new(cocktail7)
+
+cocktail8 = ({"name" => "Rum & Coke", "drink_id" => @drink3.id, "mixer_id" => @mixer1.id})
+@cocktail8 = Cocktail.new(cocktail8)
+
+cocktail9 = ({"name" => "Rum & Lemonade", "drink_id" => @drink3.id, "mixer_id" => @mixer3.id})
+@cocktail9 = Cocktail.new(cocktail9)
+
+cocktail10 = ({"name" => "Rum & Pineapple", "drink_id" => @drink3.id, "mixer_id" => @mixer4.id})
+@cocktail10 = Cocktail.new(cocktail10)
+
+cocktail11 = ({"name" => "Whisky & Coke", "drink_id" => @drink4.id, "mixer_id" => @mixer1.id})
+@cocktail11 = Cocktail.new(cocktail11)
+
+cocktail12 = ({"name" => "Whisky Soda", "drink_id" => @drink4.id, "mixer_id" => @mixer5.id})
+@cocktail12 = Cocktail.new(cocktail12)
+
+cocktail13 = ({"name" => "Wine Spritzer (Lemonade)", "drink_id" => @drink5.id, "mixer_id" => @mixer3.id})
+@cocktail13 = Cocktail.new(cocktail13)
+
+cocktail14 = ({"name" => "Wine Spritzer (Soda)", "drink_id" => @drink5.id, "mixer_id" => @mixer5.id})
+@cocktail14 = Cocktail.new(cocktail14)
+
+cocktail15 = ({"name" => "Shandy", "drink_id" => @drink6.id, "mixer_id" => @mixer3.id})
+@cocktail15 = Cocktail.new(cocktail15)
+
+cocktail16 = ({"name" => "Gin & Lemonade", "drink_id" => @drink2.id, "mixer_id" => @mixer3.id})
+@cocktail16 = Cocktail.new(cocktail16)
 
 @cocktail1.save()
 @cocktail2.save()
@@ -103,14 +109,14 @@ cocktail6 = ({"name" => "Vodka & Tonic", "drink_id" => @drink1.id, "mixer_id" =>
 @cocktail4.save()
 @cocktail5.save()
 @cocktail6.save()
-# @cocktail7.save()
-# @cocktail8.save()
-# @cocktail9.save()
-# @cocktail10.save()
-# @cocktail11.save()
-# @cocktail12.save()
-# @cocktail13.save()
-# @cocktail14.save()
+@cocktail7.save()
+@cocktail8.save()
+@cocktail9.save()
+@cocktail10.save()
+@cocktail11.save()
+@cocktail12.save()
+@cocktail13.save()
+@cocktail14.save()
 
 
 binding.pry()

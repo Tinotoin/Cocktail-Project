@@ -34,17 +34,20 @@ class Cocktail
     sql = "SELECT * FROM cocktails WHERE drink_id = $1 AND mixer_id = $2"
     values = [d_id, m_id]
     result = SqlRunner.run(sql, values).first
-    cocktail = Cocktail.new(result)
-    return cocktail
-  end
-  
-  def make_cocktail(d_id, m_id)
-    for cocktail in cocktails
-      if drink.id == $1 && mixer.id == $2
-        return "Vodka & Coke"
-      else
-        return "Sorry, those don't go together!"
-      end
+    if result != nil
+      cocktail = Cocktail.new(result)
+      return cocktail
+    else
+      return nil
     end
+
   end
+  #
+  # def reject_cocktail(cocktail)
+  #   for cocktail in cocktails
+  #     if cocktail /= @cocktail
+  #       return "Sorry, those don't go together!"
+  #     end
+  #   end
+  # end
 end

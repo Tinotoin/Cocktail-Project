@@ -15,5 +15,9 @@ end
 
 post '/drinks' do
   @cocktail = Cocktail.find(params['Drink'],params['Mixer'])
-  erb(:new)
+  if @cocktail != nil
+    erb(:new)
+  else
+    erb(:reject)
+  end
 end
